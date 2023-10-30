@@ -6,10 +6,8 @@
 /**
  * binary_tree_node - Creates a binary tree node.
  *
- * @newNode: Pointer to the node to print
- * @n: value param
- * @left: left of the node
- * @right: right of the node
+ * @parent: partent of the node
+ * @value: value of the node
  *
  * Return: a new node.
  */

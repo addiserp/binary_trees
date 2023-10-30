@@ -4,7 +4,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_insert_left - Creates a binary tree node.
+ * binary_tree_insert_right - Creates a binary tree node.
  *
  * @parent: partent of the node
  * @value: value of the node
@@ -12,7 +12,7 @@
  * Return: a new node.
  */
 
-binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
+binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
 if (parent == NULL)
 {
@@ -25,11 +25,11 @@ if (newNode == NULL)
 {
 return (NULL);
 }
-if (parent->left != NULL)
+if (parent->right != NULL)
 {
-newNode->left = parent->left;
-parent->left->parent = newNode;
+newNode->right = parent->right;
+parent->right->parent = newNode;
 }
-parent->left = newNode;
-	return (newNode);
+parent->right = newNode;
+return (newNode);
 }
