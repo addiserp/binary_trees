@@ -36,7 +36,7 @@ return (balance);
  * Return: None.
  */
 
-size_t binary_tree_height(const binary_tree_t *tree)
+size_t binary_tree_height_2(const binary_tree_t *tree)
 {
 size_t countl = 0;
 size_t countr = 0;
@@ -49,8 +49,8 @@ else
 {
 if (tree)
 {
-countl = tree->left ? 1 + binary_tree_height_b(tree->left) : 1;
-countr = tree->right ? 1 + binary_tree_height_b(tree->right) : 1;
+countl = tree->left ? 1 + binary_tree_height_2(tree->left) : 1;
+countr = tree->right ? 1 + binary_tree_height_2(tree->right) : 1;
 }
 if (countl > countr)
 {
