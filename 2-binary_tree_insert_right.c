@@ -16,7 +16,7 @@ if (parent == NULL)
 return (NULL);
 }
 
-struct binary_tree_s *newNode;
+binary_tree_t *newNode;
 newNode = binary_tree_node(parent, value);
 if (newNode == NULL)
 {
