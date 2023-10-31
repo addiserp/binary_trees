@@ -49,9 +49,9 @@ if (tree == NULL)
 {
 return (0);
 }
-size_t balance = 0;
-size_t countl = 0;
-size_t countr = 0;
+int balance = 0;
+int countl = 0;
+int countr = 0;
 
 if (tree)
 {
