@@ -45,9 +45,7 @@ return (countr);
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
-int balance = 0;
-int countl = 0;
-int countr = 0;
+int balance = 0, countl = 0, countr = 0;
 
 if (tree)
 {
