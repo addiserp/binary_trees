@@ -45,13 +45,13 @@ return (countr);
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
-int balance = 0, countl = 0, countr = 0;
+int right = 0, left = 0, total = 0;
 
 if (tree)
 {
-countl = ((int)binary_tree_height_2(tree->left));
-countr = ((int)binary_tree_height_2(tree->right));
-balance = countr - countl;
+left = ((int)binary_tree_height_2(tree->left));
+right = ((int)binary_tree_height_2(tree->right));
+total = total - right;
 }
-return (balance);
+return (total);
 }
