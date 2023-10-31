@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-
 /**
  * binary_tree_inorder - Print in in-order format.
  *
@@ -18,7 +17,7 @@ return;
 binary_tree_inorder(tree->left, func);
 func(tree->n);
 binary_tree_inorder(tree->right, func);
-
+return;
 }
 
 /**

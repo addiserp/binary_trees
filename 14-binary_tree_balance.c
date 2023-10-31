@@ -9,6 +9,10 @@
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
+if (tree == NULL)
+{
+return (0);
+}
 size_t balance = 0;
 size_t countl = 0;
 size_t countr = 0;
