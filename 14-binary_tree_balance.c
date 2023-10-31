@@ -20,8 +20,8 @@ size_t countr = 0;
 
 if (tree)
 {
-countl = ((int)binary_tree_height(tree->left));
-countr = ((int)binary_tree_height(tree->right));
+countl = ((int)binary_tree_height_2(tree->left));
+countr = ((int)binary_tree_height_2(tree->right));
 balance = countr - countl;
 }
 return (balance);
