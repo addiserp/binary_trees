@@ -11,7 +11,10 @@
 int tree_is_perfect(const binary_tree_t *tree)
 {
 int countl = 0, countr = 0;
-
+if (tree == NULL)
+{
+return (0);
+}
 if (tree->left && tree->right)
 {
 countl = 1 + tree_is_perfect(tree->left);
