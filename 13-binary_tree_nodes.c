@@ -20,8 +20,8 @@ return (0);
 }
 else
 {
-countl = binary_tree_nodes(tree->left);
-countr = binary_tree_nodes(tree->right);
+countl += binary_tree_nodes(tree->left);
+countr += binary_tree_nodes(tree->right);
 size = countl + countr;
 if (tree->left == NULL && tree->right)
 {
